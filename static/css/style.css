@@ -1,0 +1,228 @@
+/* Variables */
+:root {
+    --black: #232326;
+    --black2: #262629;
+    --darkblack: #151517;
+    --darkgray: #35353b;
+    --lightgray: lightgray;
+    --messagegray: #303033;
+    --red: rgb(240, 18, 18);
+    --white: #ffffff;
+}
+
+/* Icons */
+.i {
+    width: auto;
+    height: auto;
+    line-height: 1;
+    line-break: 1;
+}
+
+.i:before {
+    font-family: bootstrap-icons !important;
+}
+
+.i-gear-fill:before {
+    content: '\F3E2';
+}
+
+.i-box-arrow-right:before {
+    content: '\F1C3';
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--messagegray);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--white);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(218, 216, 216);
+}
+
+/* General Settings */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--black);
+}
+
+span {
+    color: var(--white) !important;
+}
+
+/* Top Bar */
+.top-bar {
+    width: 100%;
+    height: 30px;
+    background: var(--darkblack);
+    display: flex;
+    flex-direction: row;
+    color: var(--white);
+}
+
+.top-bar-logo {
+    height: 100%;
+    padding: 3.5px;
+}
+
+.top-bar-part1 {
+    width: 25%;
+}
+
+.top-bar-part2 {
+    width: 50%;
+    text-align: center;
+}
+
+.top-bar-part3 {
+    width: 25%;
+}
+
+.screen-icons {
+    right: 0;
+    width: 100%;
+}
+
+.screen-icons i {
+    color: var(--white);
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 5px 0 7px;
+    width: 30px;
+    margin-right: 0;
+}
+
+.screen-minimize:hover {
+    background: var(--white) !important;
+    color: var(--black);
+    transition: .5s all;
+}
+
+.screen-close:hover {
+    background: var(--red) !important;
+    transition: .5s all;
+}
+
+/* User Bar */
+.user-bar {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 30% 70%;
+}
+
+.user-bar .user-bar-left {
+    background: var(--black2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.user-bar .user-bar-left .request-user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-bar .user-bar-left .request-user .request-user-pp {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.user-bar .user-bar-left .request-user .request-user-username {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.user-bar .user-bar-left .request-user-controls {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    align-items: center;
+}
+
+.user-bar .user-bar-left .request-user-controls span {
+    font-size: 20px;
+    color: var(--white);
+    padding: 5px;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.user-bar .user-bar-left .request-user-controls span:hover {
+    background: var(--darkgray) !important;
+}
+
+.user-bar .user-bar-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.user-bar .user-bar-right .chat-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-bar .user-bar-right .chat-details .chat-pp {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.user-bar .user-bar-right .chat-details .chat-texts {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-bar .user-bar-right .chat-details .chat-texts .chat-name {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.user-bar .user-bar-right .chat-details .chat-texts .chat-users {
+    font-size: 15px;
+    color: var(--lightgray) !important;
+}
+
+.user-bar .user-bar-right .chat-controls {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    align-items: center;
+}
+
+.user-bar .user-bar-right .chat-controls span {
+    font-size: 20px;
+    color: var(--white);
+    padding: 5px;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.user-bar .user-bar-right .chat-controls span:hover {
+    background: var(--darkgray) !important;
+}
+
+.user-bar .user-bar-right .chat-controls .leave-chat {
+    color: var(--red) !important;
+}
